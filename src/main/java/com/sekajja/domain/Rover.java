@@ -86,8 +86,9 @@ public class Rover implements Serializable {
 				
 				case North:
 					
-					Integer point = currentPoint.getY();
-					point--;
+					Integer northBackward = currentPoint.getY();
+					northBackward--;
+					currentPoint.setX(northBackward);
 					
 					break;
 				case South:
