@@ -50,7 +50,7 @@ public class RoverServiceImpl implements RoverService {
 	@Override
 	public Rover moveFoward(Rover rover) {
 		
-		rover.moveFoward();
+		rover.moveFowardByDistance(1);
 		
 		return rover;
 	}
@@ -58,7 +58,7 @@ public class RoverServiceImpl implements RoverService {
 	@Override
 	public Rover moveBackward(Rover rover) {
 		
-		rover.moveBackward();
+		rover.moveBackwardByDistance(1);
 		
 		return rover;
 	}
@@ -66,7 +66,7 @@ public class RoverServiceImpl implements RoverService {
 	@Override
 	public Rover moveLeft(Rover rover) {
 		
-		rover.moveLeft();
+		rover.moveLeftByDistance(1);
 		
 		return rover;
 	}
@@ -74,7 +74,7 @@ public class RoverServiceImpl implements RoverService {
 	@Override
 	public Rover moveRight(Rover rover) {
 		
-		rover.moveRight();
+		rover.moveRightByDistance(1);
 		
 		return rover;
 	}
