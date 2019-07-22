@@ -42,5 +42,27 @@ public class RoverMultipleCommandTests {
 		
 	}
 	
+	@Test
+	public void moveTest2() {
+		
+		/* Given: 
+		 * Rover at position (2,2) and facing North
+		 */
+		Coordinate position = new Coordinate(2,2);
+		Rover rover = new Rover("Mars Rover", position, Direction.North);
+		
+		/* When: 
+		 * Rover moves forward 3 units
+		 */
+		service.move(rover, new char[]{'f', 'b', 'f'});
+		
+		/* Then: 
+		 * Rover goes to position (2,3)
+		 */
+		assertThat(rover.getCurrentPoint().getY()).isEqualTo(3);
+		
+		
+	}
+	
 
 }
