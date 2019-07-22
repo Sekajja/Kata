@@ -10,15 +10,43 @@ public class RoverServiceImpl implements RoverService {
 	@Override
 	public Rover move(Rover rover, char[] commands) {
 		
-		return null;
+		
+		
+		for(char command: commands) {
+			
+			switch(command) {
+			
+			case 'f':
+				
+				rover.moveFowardByDistance(1);
+				
+				break;
+			case 'b':
+				
+				rover.moveBackwardByDistance(1);
+				
+				break;
+			case 'l':
+				
+				rover.moveLeftByDistance(1);
+				
+				break;
+			case 'r':
+				
+				rover.moveRightByDistance(1);
+				
+				break;
+				
+			default:
+				//Don't move if command is unclear, we could lose a Rover
+				break;
+		}
+		}
+		
+		return rover;
 	}
 	
-	@Override
-	public Rover move(Rover rover, String commands) {
-		
-		return null;
-	}
-
+	
 	@Override
 	public Rover moveFoward(Rover rover) {
 		

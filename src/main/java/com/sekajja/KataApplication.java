@@ -8,6 +8,7 @@ public class KataApplication {
 
 	public static void main(String[] args) throws InterruptedException {
 		SpringApplication.run(KataApplication.class, args);		
+		
 	}
 
 }
