@@ -30,7 +30,7 @@ public class Rover implements Serializable {
 	
 	
 	
-	public Coordinate moveFoward() {		
+	public void moveFoward() {		
 		
 		
 		//TODO: Implement a stop
@@ -75,7 +75,6 @@ public class Rover implements Serializable {
 		}
 		
 	}
-
 	
 	public void moveBackward() {
 		
@@ -204,6 +203,200 @@ public class Rover implements Serializable {
 					//Don't move if command is unclear, we could lose a Rover
 					break;
 			}
+			
+		}
+	}
+	
+	
+	
+	public void moveFowardByDistance(Integer distance) {		
+		
+		Integer i = 0;
+		
+		
+		while(i < distance) {
+			
+			switch(this.directionFaced) {
+				
+				case North:
+					
+					Integer northForward = currentPoint.getY();
+					++northForward;
+					currentPoint.setY(northForward);
+					
+					break;
+				case South:
+					
+					Integer southForward = currentPoint.getY();
+					--southForward;
+					currentPoint.setY(southForward);
+					
+					break;
+				case East:
+					
+					Integer eastForward = currentPoint.getX();
+					++eastForward;
+					currentPoint.setX(eastForward);
+					
+					break;
+				case West:
+					
+					Integer westForward = currentPoint.getX();
+					--westForward;
+					currentPoint.setX(westForward);
+					
+					break;
+					
+				default:
+					//Don't move if command is unclear, we could lose a Rover
+					break;
+			}
+			
+			i++;
+			
+		}
+		
+	}
+	
+	public void moveBackwardByDistance(Integer distance) {
+		
+		
+		Integer i = 0;
+		
+		while(i < distance) {
+			
+			switch(this.directionFaced) {
+				
+				case North:
+					
+					Integer northBackward = currentPoint.getY();
+					--northBackward;
+					currentPoint.setY(northBackward);
+					
+					break;
+				case South:
+					
+					Integer southBackward = currentPoint.getY();
+					++southBackward;
+					currentPoint.setY(southBackward);
+					
+					break;
+				case East:
+					
+					Integer eastBackward = currentPoint.getX();
+					--eastBackward;
+					currentPoint.setX(eastBackward);
+					
+					break;
+				case West:
+					
+					Integer westBackward = currentPoint.getX();
+					++westBackward;
+					currentPoint.setX(westBackward);
+					
+					break;
+					
+				default:
+					//Don't move if command is unclear, we could lose a Rover
+					break;
+			}
+			
+			i++;
+			
+		}
+	}
+
+	public void moveLeftByDistance(Integer distance) {
+		
+		Integer i = 0;
+		
+		while(i < distance) {
+			
+			switch(this.directionFaced) {
+				
+				case North:
+					
+					Integer northLeft = currentPoint.getX();
+					--northLeft;
+					currentPoint.setX(northLeft);
+					
+					break;
+				case South:
+					
+					Integer southLeft = currentPoint.getX();
+					++southLeft;
+					currentPoint.setX(southLeft);
+					
+					break;
+				case East:
+					
+					Integer eastLeft = currentPoint.getY();
+					++eastLeft;
+					currentPoint.setY(eastLeft);
+					
+					break;
+				case West:
+					
+					Integer westLeft = currentPoint.getY();
+					--westLeft;
+					currentPoint.setY(westLeft);
+					
+					break;
+					
+				default:
+					//Don't move if command is unclear, we could lose a Rover
+					break;
+			}
+			
+			i++;
+			
+		}
+		
+	}
+
+	public void moveRightByDistance(Integer distance) {
+		
+		Integer i = 0;
+		
+		while(i < distance) {
+			
+			switch(this.directionFaced) {
+				
+				case North:
+					
+					Integer northRight = currentPoint.getX();
+					--northRight;
+					currentPoint.setX(northRight);
+					
+					break;
+				case South:
+					
+					Integer southRight = currentPoint.getX();
+					++southRight;
+					currentPoint.setX(southRight);
+					
+					break;
+				case East:
+					
+					Integer eastRight = currentPoint.getY();
+					++eastRight;
+					currentPoint.setY(eastRight);
+					
+					break;
+				case West:
+					
+					Integer westRight = currentPoint.getY();
+					--westRight;
+					currentPoint.setY(westRight);
+					
+					break;
+					
+				default:
+					//Don't move if command is unclear, we could lose a Rover
+					break;
+			}
+			
+			i++;
 			
 		}
 	}

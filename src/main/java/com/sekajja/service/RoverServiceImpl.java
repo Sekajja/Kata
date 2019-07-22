@@ -1,7 +1,10 @@
 package com.sekajja.service;
 
+import org.springframework.stereotype.Service;
+
 import com.sekajja.domain.Rover;
 
+@Service
 public class RoverServiceImpl implements RoverService {
 
 	@Override

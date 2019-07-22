@@ -14,5 +14,22 @@ public class Coordinate implements Serializable {
 	
 	private Integer x;
 	private Integer y;
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Coordinate [x=" + x + ", y=" + y + "]";
+	}
+
+
+
+	public Coordinate(Integer x, Integer y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+	
+	
 
 }
