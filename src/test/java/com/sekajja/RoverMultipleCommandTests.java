@@ -30,12 +30,12 @@ public class RoverMultipleCommandTests {
 		Rover rover = new Rover("Mars Rover", position, Direction.North);
 		
 		/* When: 
-		 * Rover moves forward 5 units
+		 * Rover moves forward 3 units
 		 */
 		service.move(rover, new char[]{'f', 'f', 'f'});
 		
 		/* Then: 
-		 * Rover goes to position (2,7)
+		 * Rover goes to position (2,5)
 		 */
 		assertThat(rover.getCurrentPoint().getY()).isEqualTo(5);
 		
