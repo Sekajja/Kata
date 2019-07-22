@@ -52,7 +52,7 @@ public class RoverMultipleCommandTests {
 		Rover rover = new Rover("Mars Rover", position, Direction.North);
 		
 		/* When: 
-		 * Rover moves forward 3 units
+		 * Rover moves forward back forward units
 		 */
 		service.move(rover, new char[]{'f', 'b', 'f'});
 		
