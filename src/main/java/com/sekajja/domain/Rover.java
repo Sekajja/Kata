@@ -55,14 +55,14 @@ public class Rover implements Serializable {
 				case East:
 					
 					Integer eastForward = currentPoint.getX();
-					eastForward++;
+					++eastForward;
 					currentPoint.setX(eastForward);
 					
 					break;
 				case West:
 					
 					Integer westForward = currentPoint.getX();
-					westForward--;
+					--westForward;
 					currentPoint.setX(westForward);
 					
 					break;
@@ -87,26 +87,29 @@ public class Rover implements Serializable {
 				case North:
 					
 					Integer northBackward = currentPoint.getY();
-					northBackward--;
-					currentPoint.setX(northBackward);
+					--northBackward;
+					currentPoint.setY(northBackward);
 					
 					break;
 				case South:
 					
-					Integer point = currentPoint.getY();
-					point++;
+					Integer southBackward = currentPoint.getY();
+					++southBackward;
+					currentPoint.setY(southBackward);
 					
 					break;
 				case East:
 					
-					Integer point = currentPoint.getX();
-					point--;
+					Integer eastBackward = currentPoint.getX();
+					--eastBackward;
+					currentPoint.setX(eastBackward);
 					
 					break;
 				case West:
 					
-					Integer point = currentPoint.getX();
-					point++;
+					Integer westBackward = currentPoint.getX();
+					++westBackward;
+					currentPoint.setX(westBackward);
 					
 					break;
 					
@@ -126,26 +129,30 @@ public class Rover implements Serializable {
 				
 				case North:
 					
-					Integer point = currentPoint.getX();
-					point--;
+					Integer northLeft = currentPoint.getX();
+					--northLeft;
+					currentPoint.setX(northLeft);
 					
 					break;
 				case South:
 					
-					Integer point = currentPoint.getX();
-					point++;
+					Integer southLeft = currentPoint.getX();
+					++southLeft;
+					currentPoint.setX(southLeft);
 					
 					break;
 				case East:
 					
-					Integer point = currentPoint.getY();
-					point++;
+					Integer eastLeft = currentPoint.getY();
+					++eastLeft;
+					currentPoint.setY(eastLeft);
 					
 					break;
 				case West:
 					
-					Integer point = currentPoint.getY();
-					point--;
+					Integer westLeft = currentPoint.getY();
+					--westLeft;
+					currentPoint.setY(westLeft);
 					
 					break;
 					
@@ -166,26 +173,30 @@ public class Rover implements Serializable {
 				
 				case North:
 					
-					Integer point = currentPoint.getX();
-					point--;
+					Integer northRight = currentPoint.getX();
+					--northRight;
+					currentPoint.setX(northRight);
 					
 					break;
 				case South:
 					
-					Integer point = currentPoint.getX();
-					point++;
+					Integer southRight = currentPoint.getX();
+					++southRight;
+					currentPoint.setX(southRight);
 					
 					break;
 				case East:
 					
-					Integer point = currentPoint.getY();
-					point++;
+					Integer eastRight = currentPoint.getY();
+					++eastRight;
+					currentPoint.setY(eastRight);
 					
 					break;
 				case West:
 					
-					Integer point = currentPoint.getY();
-					point--;
+					Integer westRight = currentPoint.getY();
+					--westRight;
+					currentPoint.setY(westRight);
 					
 					break;
 					

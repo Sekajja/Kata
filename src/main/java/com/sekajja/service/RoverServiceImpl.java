@@ -12,26 +12,34 @@ public class RoverServiceImpl implements RoverService {
 
 	@Override
 	public Rover moveFoward(Rover rover) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		rover.moveFoward();
+		
+		return rover;
 	}
 
 	@Override
 	public Rover moveBackward(Rover rover) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		rover.moveBackward();
+		
+		return rover;
 	}
 
 	@Override
 	public Rover moveLeft(Rover rover) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		rover.moveLeft();
+		
+		return rover;
 	}
 
 	@Override
 	public Rover moveRight(Rover rover) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		rover.moveRight();
+		
+		return rover;
 	}
 
 }
