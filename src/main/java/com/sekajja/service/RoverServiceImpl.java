@@ -8,8 +8,14 @@ import com.sekajja.domain.Rover;
 public class RoverServiceImpl implements RoverService {
 
 	@Override
-	public Rover move(Rover rover, String[] commands) {
-		// TODO Auto-generated method stub
+	public Rover move(Rover rover, char[] commands) {
+		
+		return null;
+	}
+	
+	@Override
+	public Rover move(Rover rover, String commands) {
+		
 		return null;
 	}
 
